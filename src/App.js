@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import SpaceObjectCardlist from "./Components/NearEarthObjects/SpaceObjectCardlist";
+import Header from "./Components/Header";
+import SpaceObjectHeader from "./Components/NearEarthObjects/SpaceObjectHeader";
+import Home from "./Components/Home/Home";
+import ImageTop from "./Components/PictureOfTheDay/ImageTop";
 
 function App() {
+  
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/spaceobjectheader" element={<SpaceObjectHeader/>}/>
+        <Route path="/imagetop" element={<ImageTop/>}/>
+      </Routes>
+      
+      
     </div>
   );
 }

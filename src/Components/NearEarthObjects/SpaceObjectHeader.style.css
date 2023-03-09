@@ -1,0 +1,21 @@
+.near-earth-container{
+    width: 80%;
+    text-align: center;
+    margin: 15px auto 20px;
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+.near-earth-header-text {
+  
+    width: 60%;
+    line-height: 24px;
+    margin: auto;
+}
+
+.near-earth-inputs {
+    margin: 8px 0 8px 0;
+}

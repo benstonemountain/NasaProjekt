@@ -1,0 +1,25 @@
+.image-header-container {
+  width: 80%;
+  text-align: center;
+  margin: 15px auto 20px;
+  padding: 10px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+.image-header-text {
+  /* border: 1px solid black; */
+  width: 60%;
+  line-height: 24px;
+  margin: auto;
+}
+
+.image-inputField {
+  margin: 8px 0 8px 0;
+}
+
+.error-message {
+  text-align: center;
+}
