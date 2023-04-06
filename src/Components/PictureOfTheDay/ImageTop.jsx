@@ -8,6 +8,7 @@ const ImageTop = () => {
   const [errMessage, setErrMessage] = useState("");
   const [isError, setIsError] = useState(false);
   const [imageFromApi, setImageFromApi] = useState([]);
+  const [visibility, setVisibility] = useState(false);
 
   return (
     <>
@@ -33,6 +34,7 @@ const ImageTop = () => {
           <button
             onClick={() => {
               getImage(setImageFromApi, InputValue, setIsError, setErrMessage);
+              setVisibility(true);
             }}
           >
             Mehet
@@ -41,7 +43,10 @@ const ImageTop = () => {
       </div>
 
       {isError && <h2 className="error-message">{errMessage}</h2>}
-      <PictureCard spacePic={imageFromApi} />
+      {
+        visibility &&
+        <PictureCard spacePic={imageFromApi} setVisibility = {setVisibility}/>
+      }
     </>
   );
 };

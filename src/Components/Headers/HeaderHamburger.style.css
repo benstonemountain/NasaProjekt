@@ -1,0 +1,44 @@
+.hamburger-header-container {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(1, 1, 43);
+  }
+
+
+
+  .hamburger-header-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0,.9);
+    backdrop-filter: blur(4px);
+    z-index: 10;
+  } 
+
+  .x {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 20px; 
+  }
+
+ .hamburger-menus {
+    margin: 60px 0 0 10px;
+    padding: 5px;
+    list-style: none;
+  }
+
+  .hamburger-menus li {
+   margin-top: 25px;
+   padding-bottom: 3px;
+   border-bottom: 1px solid white;
+  
+  }
+
+  .hamburger-menus li a {
+    text-decoration: none;
+    color: white;
+  }

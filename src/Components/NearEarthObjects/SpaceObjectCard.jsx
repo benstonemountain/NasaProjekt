@@ -2,8 +2,7 @@ import "./SpaceObjectCard.css";
 import { useState } from "react";
 import FullCard from "./FullCard";
 
-const SpaceObjectCard = ({ spaceObject, index }) => {
-  console.log("Ez mikor fut le? (card)");
+const SpaceObjectCard = ({ spaceObject, index }) => { 
   console.log(spaceObject);
   const [visibility, setVisibility] = useState(false);
 

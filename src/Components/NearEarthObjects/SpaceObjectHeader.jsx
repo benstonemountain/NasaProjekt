@@ -6,7 +6,7 @@ import SpaceObjectCardlist from "./SpaceObjectCardlist";
 const SpaceObjectHeader = () => {
   const [dateInputValue, setDateInputValue] = useState("");
   const [spaceObjects, setSpaceObjects] = useState([]);
-  console.log("Spaceobjectheader-ben vagyok)");
+  
 
   return (
     <div className="near-earth-container">

@@ -1,28 +1,69 @@
+.picture-overlay {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+
 .picture-container {
-    width: 80vw;
-    height: 80vh;
-    margin: auto;
+    max-width: 100vw;
+   height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    z-index: 12;
+    overflow-y: scroll;
+    border: 1px solid white;
   }
-  
-  .picture-card-title {
-    text-align: center;
-  }
-  
+
   .picture-card-container {
     display: flex;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    border: 1px dashed yellow;
+    max-width: 100%;
+    max-height: 700px;
+    
   }
   
   img {
-    max-width: 100%;
-    max-height: 100%;
+
+  width: 100%;
+ 
+  }
+
+  .picture-card-title {
+    text-align: center;
+    color: white;
   }
   
   .picture-card-explanation {
     text-align: center;
     margin-top: 10px;
     padding: 10px 20px 10px;
+    color: white;
   }
+
+  /*close image*/
+
+  .picture-back-btn {
+    font-size: 1.7rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .back-btn p:nth-child(2) {
+   font-size: 32px;
+  }
+  
+
   

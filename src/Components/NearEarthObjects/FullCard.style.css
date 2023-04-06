@@ -7,13 +7,13 @@
   height: 150px;
 }
 
-.back-btn {
+.near-earth-object-back-btn {
+  display: block;
   font-size: 1.7rem;
   cursor: pointer;
   position: absolute;
-  top: -80px;
-  /* középre: right: calc(220.12px - 15.6px); */
-  right: 20px;
+  top: -50px;
+  right: -20px;
 }
 
 table {
